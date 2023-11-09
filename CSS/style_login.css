@@ -45,149 +45,167 @@ body {
     justify-content: space-between;
 }
 
-.layers {
+.header {
+    height: 1080px;
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+    background-image: url("../resources/new_back.jpg");
+    background-size: cover;
+}
+
+.headerL {
     height: 100vh;
     display: flex;
+    flex-direction: column;
+    gap: 200px;
+    background-image: url("../resources/задний\ фон.png");
+    background-size: cover;
+
+    font-family: "TLheader";
+    font-size: 41px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #FFF;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__fonPanel {
+    background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.80) 22.4%, rgba(0, 0, 0, 0.76) 48.96%, rgba(0, 0, 0, 0.64) 73.96%, rgba(0, 0, 0, 0.50) 99.98%);
+}
+
+.header__block {
+    padding-left: 88px;
+    padding-right: 88px;
+    font-family: "TLheader";
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-size: 24px;
+}
+
+.header__block a {
+    text-decoration: none;
+    color: white;
+}
+
+.header__text {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__img {
+    max-width: 216px;
+    height: 71px;
+}
+
+.header__imgs {
+    width: 100%;
+    height: 100%;
+}
+
+.header__container {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    overflow: hidden;
-    position: relative;
+    padding-left: 520px;
+    padding-right: 520px;
 }
 
-.layer {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    background-size: cover;
-    background-position: center;
-    will-change: transform;
-}
-
-.layer__base {
-    background-image: url('../resources/base.jpg');
-    transform: translate3d(0, calc(var(--scrollTop)/1.7), 0);
-}
-
-.layer__mid {
-    background-image: url('../resources/middle.png');
-    transform: translate3d(0, calc(var(--scrollTop)/3), 0);
-    z-index: 2;
-}
-
-.layer__front {
-    background-image: url('../resources/front.png');
-    transform: translate3d(0, calc(var(--scrollTop)/6), 0);
-    z-index: 3;
-}
-
-.layer__header {
-    transform: translate3d(0, calc(var(--scrollTop)/1.5), 0);
-    z-index: 1;
-    margin-bottom: 50px;
-}
-
-.layer__header p {
+.header__textContainer {
     color: #FFF;
     text-align: center;
-    font-family: 'TLheader';
+    font-family: "TLheader";
     font-size: 29px;
     font-style: normal;
     font-weight: 700;
-    line-height: normal;
-    width: 880px;
+    line-height: normal
 }
 
-.layer__header img {
-    padding-bottom: 50px;
-}
-
-h2 {
+.header__glaw h1 {
     color: #FFF;
     text-align: center;
-    font-family: 'TLheader';
-    font-size: 62px !important;
+    font-family: "TLheader";
+    font-size: 62px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-bottom: 50px !important;
 }
 
-.slicer {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 50%, rgba(0, 0, 0, 0.00) 100%);
-    width: 100%;
-    height: 220px;
-    flex-shrink: 0;
+.header__login {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    position: relative;
-    margin-top: -110px;
-    z-index: 3;
-    margin-bottom: -110px;
+    justify-content: center;
+    row-gap: 43px;
 }
 
-.news {
-    background-image: url('../resources/dungeon_4.jpg');
-    height: 100vh;
+.header__input {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
+    row-gap: 43px;
 }
 
-.news__up-bigger {
-    background: #003629;
-    width: 100%;
-    height: 360px;
-    display: flex;
-    flex-direction: column-reverse;
-    margin-bottom: 40px;
-}
-
-.news__item__down {
-    background: rgba(0, 0, 0, 0.6);
-    background-blend-mode: darken;
-    width: 100%;
-    height: 50%
-}
-
-.news__down {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.news__item {
-    background: #D9D9D9;
-    width: 30%;
-    height: 290px;
-    display: flex;
-    flex-direction: column-reverse;
-
-}
-
-.media {
-    background-image: url('../resources/dungeon_5.jpg');
-    background-size: cover;
-    height: 100vh;
+.header__loginP {
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
-.media__items {
+.header__passP {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    row-gap: 20px;
+    flex-direction: column;
 }
 
-.media__item {
-    background: #D9D9D9;
-    height: 200px;
-    width: 24%;
+.header__login input {
+    width: 624px;
+    height: 75px;
+    border-radius: 10px;
+    border: 2px solid #000;
+    background: #323232;
+
+    font-family: "TLheader";
+    font-size: 41px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #FFF;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.header__login label {
+    padding-left: 10px
+}
+.headerL__button{
+    width: 410px;
+    height: 75px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 2px solid #000;
+    background: #323232;
+
+    font-family: "TLheader";
+    font-size: 41px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.headerL__button:active{
+    background: #b2b0b0;
 }
 
 footer {
@@ -306,4 +324,19 @@ footer a {
 
 .headerL__button:active{
     background: #b2b0b0;
+}
+
+.slicer {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 50%, rgba(0, 0, 0, 0.00) 100%);
+    width: 100%;
+    height: 220px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: -110px;
+    z-index: 3;
+    margin-bottom: -110px;
 }
