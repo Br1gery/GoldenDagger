@@ -7,6 +7,10 @@ body {
     margin: 0;
 }
 
+.nav__a:hover{
+    color: #b2b0b0;
+}
+
 .navigation {
     background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.80) 22.4%, rgba(0, 0, 0, 0.76) 48.96%, rgba(0, 0, 0, 0.64) 73.96%, rgba(0, 0, 0, 0.50) 99.98%);
     z-index: 10;
