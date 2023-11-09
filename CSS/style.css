@@ -7,6 +7,101 @@ body {
     margin: 0;
 }
 
+.navigation {
+    background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.80) 22.4%, rgba(0, 0, 0, 0.76) 48.96%, rgba(0, 0, 0, 0.64) 73.96%, rgba(0, 0, 0, 0.50) 99.98%);
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+}
+
+.nav__cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 5;
+    align-items: center;
+}
+
+.nav__cont img {
+    width: 215px;
+    height: 70px;
+}
+
+.nav__cont a {
+    color: #FFF;
+    text-align: center;
+    font-family: 'TLheader';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: 0;
+}
+
+.nav__main{
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.layers {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.layer {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    will-change: transform;
+}
+
+.layer__base {
+    background-image: url('../resources/base.jpg');
+    transform: translate3d(0, calc(var(--scrollTop)/1.7), 0);
+}
+
+.layer__mid {
+    background-image: url('../resources/middle.png');
+    transform: translate3d(0, calc(var(--scrollTop)/3), 0);
+    z-index: 2;
+}
+
+.layer__front {
+    background-image: url('../resources/front.png');
+    transform: translate3d(0, calc(var(--scrollTop)/6), 0);
+    z-index: 3;
+}
+
+.layer__header {
+    transform: translate3d(0, calc(var(--scrollTop)/1.5), 0);
+    z-index: 1;
+    margin-bottom: 50px;
+}
+
+.layer__header p {
+    color: #FFF;
+    text-align: center;
+    font-family: 'TLheader';
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 880px;
+}
+
+.layer__header img {
+    padding-bottom: 50px;
+}
+
 h2 {
     color: #FFF;
     text-align: center;
@@ -16,78 +111,6 @@ h2 {
     font-weight: 700;
     line-height: normal;
     margin-bottom: 50px !important;
-}
-
-header {
-    background-image: url("../resources/new_back.jpg");
-    background-size: cover;
-}
-
-.header {
-    height: 1080px;
-    display: flex;
-    flex-direction: column;
-    gap: 200px;
-    position: relative;
-}
-
-.header__fonPanel {
-    background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.80) 22.4%, rgba(0, 0, 0, 0.76) 48.96%, rgba(0, 0, 0, 0.64) 73.96%, rgba(0, 0, 0, 0.50) 99.98%);
-}
-
-.header__block {
-    padding-left: 88px;
-    padding-right: 88px;
-    font-family: "TLheader";
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    color: white;
-    font-size: 24px;
-}
-
-.header__block a {
-    text-decoration: none;
-    color: white;
-}
-
-.header__text {
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.header__img {
-    max-width: 216px;
-    height: 71px;
-}
-
-.header__imgs {
-    width: 100%;
-    height: 100%;
-}
-
-.header__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-left: 520px;
-    padding-right: 520px;
-}
-
-.header__textContainer {
-    margin-top: 115px;
-    color: #FFF;
-    text-align: center;
-    font-family: "TLheader";
-    font-size: 29px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal
 }
 
 .slicer {
@@ -107,7 +130,7 @@ header {
 
 .news {
     background-image: url('../resources/dungeon_4.jpg');
-    height: 1080px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -147,7 +170,7 @@ header {
 .media {
     background-image: url('../resources/dungeon_5.jpg');
     background-size: cover;
-    height: 1080px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -191,7 +214,7 @@ footer a {
     text-decoration: none;
 }
 
-.cont{
+.cont {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -201,7 +224,7 @@ footer a {
     padding-bottom: 40px;
 }
 
-.footer__mid{
+.footer__mid {
     width: 60%;
     display: flex;
     flex-direction: row;
