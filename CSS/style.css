@@ -7,16 +7,29 @@ body {
     margin: 0;
 }
 
-header {
-    background-image: url("/new_back.jpg");
-    background-size: cover;
-}
-
 .header {
     height: 1080px;
     display: flex;
     flex-direction: column;
     gap: 200px;
+    background-image: url("../resources/new_back.jpg");
+    background-size: cover;
+}
+
+.headerL {
+    height: 1080px;
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+    background-image: url("../resources/задний\ фон.png");
+    background-size: cover;
+
+    font-family: "TLheader";
+    font-size: 41px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #FFF;
 }
 
 .header__fonPanel {
@@ -75,4 +88,81 @@ header {
     font-style: normal;
     font-weight: 700;
     line-height: normal
+}
+
+.header__glaw h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: "TLheader";
+    font-size: 62px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.header__login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 43px;
+}
+
+.header__input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 43px;
+}
+
+.header__loginP {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__passP {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__login input {
+    width: 624px;
+    height: 75px;
+    border-radius: 10px;
+    border: 2px solid #000;
+    background: #323232;
+
+    font-family: "TLheader";
+    font-size: 41px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #FFF;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.header__login label {
+    padding-left: 10px
+}
+.headerL__button{
+    width: 410px;
+    height: 75px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 2px solid #000;
+    background: #323232;
+
+    font-family: "TLheader";
+    font-size: 41px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.headerL__button:active{
+    background: #b2b0b0;
 }
