@@ -1,0 +1,78 @@
+@font-face {
+    font-family: "TLheader";
+    src: url("../fonts/TLheader-Regular.otf");
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background-image: url("/new_back.jpg");
+    background-size: cover;
+}
+
+.header {
+    height: 1080px;
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+}
+
+.header__fonPanel {
+    background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.80) 22.4%, rgba(0, 0, 0, 0.76) 48.96%, rgba(0, 0, 0, 0.64) 73.96%, rgba(0, 0, 0, 0.50) 99.98%);
+}
+
+.header__block {
+    padding-left: 88px;
+    padding-right: 88px;
+    font-family: "TLheader";
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-size: 24px;
+}
+
+.header__block a {
+    text-decoration: none;
+    color: white;
+}
+
+.header__text {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__img {
+    max-width: 216px;
+    height: 71px;
+}
+
+.header__imgs {
+    width: 100%;
+    height: 100%;
+}
+
+.header__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 520px;
+    padding-right: 520px;
+}
+
+.header__textContainer {
+    color: #FFF;
+    text-align: center;
+    font-family: "TLheader";
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal
+}
