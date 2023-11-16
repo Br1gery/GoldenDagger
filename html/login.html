@@ -5,15 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../CSS/style_login.css">
+    <link rel="stylesheet" href="../CSS/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="libs/gsap/gsap.min.js" defer></script>
+    <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+    <script src="../scripts/ScrollAnim.js" defer></script>
 </head>
 
 <body>
     <div class="navigation">
         <div class="container nav__cont">
-            <img src="../resources/test_dagger_final.png" alt="">
+            <a href="index.html"><img src="../resources/test_dagger_final.png" alt=""></a>
             <div class="nav__main">
                 <a href="index.html">Главная</a>
                 <a href="!">Магазин</a>
@@ -24,50 +28,54 @@
         </div>
     </div>
 
-    <header>
-        <div class="headerL">
-            <div class="header__container">
-                <div class="header__glaw">
-                    <h1>Авторизация</h1>
-                </div>
-                <div class="header__login">
-                    <div class="header__input">
-                        <div class="header__loginP">
-                            <label for="login">Логин</label>
-                            <input id="login" type="text">
+    <div class="wrapper">
+        <div class="container1">
+            <header>
+                <div class="headerL">
+                    <div class="header__container">
+                        <div class="header__glaw">
+                            <h1>Авторизация</h1>
                         </div>
-                        <div class="header__passP">
-                            <label for="password">Пароль</label>
-                            <input id="password" type="text">
+                        <div class="header__login">
+                            <div class="header__input">
+                                <div class="header__loginP">
+                                    <label for="login">Логин</label>
+                                    <input id="login" type="text">
+                                </div>
+                                <div class="header__passP">
+                                    <label for="password">Пароль</label>
+                                    <input id="password" type="text">
+                                </div>
+                            </div>
+                            <button class="headerL__button" type="button">Войти</button>
                         </div>
                     </div>
-                    <button class="headerL__button" type="button">Войти</button>
+                </div>
+            </header>
+            <div class="slicer">
+                <div class="slicer__container">
+                    <img src="../resources/slicer.png" alt="">
                 </div>
             </div>
-        </div>
-    </header>
-    <div class="slicer">
-        <div class="slicer__container">
-            <img src="../resources/slicer.png" alt="">
+            <footer>
+                <div class="container cont">
+                    <img src="../resources/test_dagger_final.png" alt="" class="footer__logo">
+                    <div class="footer__mid">
+                        <a href="">Главная</a>
+                        <a href="">Магазин</a>
+                        <a href="">Поддержка</a>
+                        <a href="">Новости</a>
+                        <a href="">О нас</a>
+                    </div>
+                    <div class="footer__socials">
+                        <a href=""><img src="../resources/dis_png 1.png" alt=""></a>
+                        <a href=""><img src="../resources/vk_png 1.png" alt=""></a>
+                        <a href=""><img src="../resources/yotube_png 1.png" alt=""></a>
+                    </div>
+                </div>
+            </footer>
         </div>
     </div>
-    <footer>
-        <div class="container cont">
-            <img src="../resources/test_dagger_final.png" alt="" class="footer__logo">
-            <div class="footer__mid">
-                <a href="">Главная</a>
-                <a href="">Магазин</a>
-                <a href="">Поддержка</a>
-                <a href="">Новости</a>
-                <a href="">О нас</a>
-            </div>
-            <div class="footer__socials">
-                <a href=""><img src="../resources/dis_png 1.png" alt=""></a>
-                <a href=""><img src="../resources/vk_png 1.png" alt=""></a>
-                <a href=""><img src="../resources/yotube_png 1.png" alt=""></a>
-            </div>
-        </div>
-    </footer>
 </body>
 
 </html>

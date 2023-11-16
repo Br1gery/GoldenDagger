@@ -3,6 +3,10 @@
     src: url("../fonts/TLheader-Regular.otf");
 }
 
+:root{
+    --transition: transform .75s cubic-bezier(0.075, 0.500, 0.000, 1.000)
+}
+
 body {
     margin: 0;
 }
@@ -62,6 +66,7 @@ body {
     background-size: cover;
     background-position: center;
     will-change: transform;
+    transition: var(--transition);
 }
 
 .layer__base {
@@ -85,6 +90,7 @@ body {
     transform: translate3d(0, calc(var(--scrollTop)/1.5), 0);
     z-index: 1;
     margin-bottom: 50px;
+    transition: var(--transition);
 }
 
 .layer__header p {
@@ -229,6 +235,253 @@ footer a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.header__glaw h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: "TLheader";
+    font-size: 62px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.header__login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 43px;
+}
+
+.header__input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 43px;
+}
+
+.header__loginP {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__passP {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__login input {
+    width: 624px;
+    height: 75px;
+    border-radius: 10px;
+    border: 2px solid #000;
+    background: #323232;
+
+    font-family: "TLheader";
+    font-size: 41px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #FFF;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.header__login label {
+    padding-left: 10px
+}
+.headerL__button{
+    width: 410px;
+    height: 75px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 2px solid #000;
+    background: #323232;
+
+    font-family: "TLheader";
+    font-size: 41px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.headerL__button:active{
+    background: #b2b0b0;
+}
+
+.footer__socials{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header__glaw h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: "TLheader";
+    font-size: 62px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.header__login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 43px;
+}
+
+.header__input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 43px;
+}
+
+.header__loginP {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__passP {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__login input {
+    width: 624px;
+    height: 75px;
+    border-radius: 10px;
+    border: 2px solid #000;
+    background: #323232;
+
+    font-family: "TLheader";
+    font-size: 41px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #FFF;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.header__login label {
+    padding-left: 10px
+}
+.headerL__button{
+    width: 410px;
+    height: 75px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 2px solid #000;
+    background: #323232;
+
+    font-family: "TLheader";
+    font-size: 41px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.headerL__button:active{
+    background: #b2b0b0;
+}
+
+.header {
+    height: 1080px;
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+    background-image: url("../resources/new_back.jpg");
+    background-size: cover;
+}
+
+.headerL {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+    background-image: url("../resources/задний\ фон.png");
+    background-size: cover;
+
+    font-family: "TLheader";
+    font-size: 41px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #FFF;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__fonPanel {
+    background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.80) 22.4%, rgba(0, 0, 0, 0.76) 48.96%, rgba(0, 0, 0, 0.64) 73.96%, rgba(0, 0, 0, 0.50) 99.98%);
+}
+
+.header__block {
+    padding-left: 88px;
+    padding-right: 88px;
+    font-family: "TLheader";
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-size: 24px;
+}
+
+.header__block a {
+    text-decoration: none;
+    color: white;
+}
+
+.header__text {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__img {
+    max-width: 216px;
+    height: 71px;
+}
+
+.header__imgs {
+    width: 100%;
+    height: 100%;
+}
+
+.header__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 520px;
+    padding-right: 520px;
+}
+
+.header__textContainer {
+    color: #FFF;
+    text-align: center;
+    font-family: "TLheader";
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal
 }
 
 .header__glaw h1 {
