@@ -1,11 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="libs/gsap/gsap.min.js" defer></script>
+    <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+    <script src="../scripts/ScrollAnim.js" defer></script>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../scripts/ShopSwiper.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
+
 <body>
-    
+    <div class="navigation">
+        <div class="container nav__cont">
+            <a href="index.html"><img src="../resources/test_dagger_final.png" alt=""></a>
+            <div class="nav__main">
+                <a href="index.html">Главная</a>
+                <a href="shop.html">Магазин</a>
+                <a href="!">Поддержка</a>
+                <a href="!">О нас</a>
+            </div>
+            <a href="login.html">Вход</a>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="container1">
+            <div class="main_cont">
+                <div class="container shop_cont">
+                    <h1>Магазин</h1>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="../resources/skeleton_2.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../resources/skeleton_1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../resources/skeleton_3.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slicer">
+                <div class="slicer__container">
+                    <img src="../resources/slicer.png" alt="">
+                </div>
+            </div>
+            <footer>
+                <div class="container cont">
+                    <a href="index.html"><img src="../resources/test_dagger_final.png" alt="" class="footer__logo"></a>
+                    <div class="footer__mid">
+                        <a href="">Главная</a>
+                        <a href="">Магазин</a>
+                        <a href="">Поддержка</a>
+                        <a href="">Новости</a>
+                        <a href="">О нас</a>
+                    </div>
+                    <div class="footer__socials">
+                        <a href=""><img src="../resources/dis_png 1.png" alt=""></a>
+                        <a href=""><img src="../resources/vk_png 1.png" alt=""></a>
+                        <a href=""><img src="../resources/yotube_png 1.png" alt=""></a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
 </body>
+
 </html>

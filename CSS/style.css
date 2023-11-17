@@ -3,8 +3,9 @@
     src: url("../fonts/TLheader-Regular.otf");
 }
 
-:root{
-    --transition: transform .75s cubic-bezier(0.075, 0.500, 0.000, 1.000)
+:root {
+    --index: calc(1vw + 1vh);
+    --transition: transform .75s cubic-bezier(0.075, 0.500, 0.000, 1.000);
 }
 
 body {
@@ -13,7 +14,7 @@ body {
 
 .navigation {
     background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.80) 22.4%, rgba(0, 0, 0, 0.76) 48.96%, rgba(0, 0, 0, 0.64) 73.96%, rgba(0, 0, 0, 0.50) 99.98%);
-    z-index: 10;
+    z-index: 100;
     position: fixed;
     width: 100%;
 }
@@ -42,7 +43,7 @@ body {
     text-decoration: 0;
 }
 
-.nav__main{
+.nav__main {
     width: 45%;
     display: flex;
     flex-direction: row;
@@ -50,7 +51,7 @@ body {
 }
 
 .layers {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -88,6 +89,9 @@ body {
 
 .layer__header {
     transform: translate3d(0, calc(var(--scrollTop)/1.5), 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     z-index: 1;
     margin-bottom: 50px;
     transition: var(--transition);
@@ -97,9 +101,8 @@ body {
     color: #FFF;
     text-align: center;
     font-family: 'TLheader';
-    font-size: 29px;
     font-style: normal;
-    font-weight: 700;
+    font-size: 29px;
     line-height: normal;
     width: 880px;
 }
@@ -117,6 +120,7 @@ h2 {
     font-weight: 700;
     line-height: normal;
     margin-bottom: 50px !important;
+    margin-top: 50px !important;
 }
 
 .slicer {
@@ -136,10 +140,11 @@ h2 {
 
 .news {
     background-image: url('../resources/dungeon_4.jpg');
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-bottom: 50px;
 }
 
 .news__up-bigger {
@@ -176,10 +181,11 @@ h2 {
 .media {
     background-image: url('../resources/dungeon_5.jpg');
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-bottom: 50px;
 }
 
 .media__items {
@@ -293,7 +299,8 @@ footer a {
 .header__login label {
     padding-left: 10px
 }
-.headerL__button{
+
+.headerL__button {
     width: 410px;
     height: 75px;
     flex-shrink: 0;
@@ -310,11 +317,11 @@ footer a {
     cursor: pointer;
 }
 
-.headerL__button:active{
+.headerL__button:active {
     background: #b2b0b0;
 }
 
-.footer__socials{
+.footer__socials {
     width: 20%;
     display: flex;
     flex-direction: row;
@@ -377,7 +384,8 @@ footer a {
 .header__login label {
     padding-left: 10px
 }
-.headerL__button{
+
+.headerL__button {
     width: 410px;
     height: 75px;
     flex-shrink: 0;
@@ -394,12 +402,12 @@ footer a {
     cursor: pointer;
 }
 
-.headerL__button:active{
+.headerL__button:active {
     background: #b2b0b0;
 }
 
 .header {
-    height: 1080px;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     gap: 200px;
@@ -408,13 +416,12 @@ footer a {
 }
 
 .headerL {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     gap: 200px;
     background-image: url("../resources/задний\ фон.png");
     background-size: cover;
-
     font-family: "TLheader";
     font-size: 41px;
     font-style: normal;
@@ -424,6 +431,12 @@ footer a {
     background-position: center;
     justify-content: center;
     align-items: center;
+}
+
+.headerL__block {
+    background-color: rgba(0, 0, 0, 0.40);
+    width: 100%;
+    padding-bottom: 10px;
 }
 
 .header__fonPanel {
@@ -470,8 +483,6 @@ footer a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-left: 520px;
-    padding-right: 520px;
 }
 
 .header__textContainer {
@@ -540,7 +551,8 @@ footer a {
 .header__login label {
     padding-left: 10px
 }
-.headerL__button{
+
+.headerL__button {
     width: 410px;
     height: 75px;
     flex-shrink: 0;
@@ -557,6 +569,47 @@ footer a {
     cursor: pointer;
 }
 
-.headerL__button:active{
+.headerL__button:active {
     background: #b2b0b0;
+}
+
+.main_cont {
+    background-image: url(../resources/dungeon_2.jpg);
+    min-height: 100vh;
+}
+
+.shop_cont h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: 'TLheader';
+    font-size: 62px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 152px !important;
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 400px !important;
+    height: 500px !important;
+}
+
+.swiper-slide img {
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after{
+    color: #FFF;
+    font-size: 70px !important;
 }
