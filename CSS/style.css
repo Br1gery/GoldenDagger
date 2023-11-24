@@ -33,6 +33,7 @@ body {
 }
 
 .nav__cont a {
+    text-decoration: none;
     color: #FFF;
     text-align: center;
     font-family: 'TLheader';
@@ -41,6 +42,17 @@ body {
     font-weight: 700;
     line-height: normal;
     text-decoration: 0;
+    text-decoration: none;
+}
+
+.navigation a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: white;
+    text-decoration: none;
 }
 
 .nav__main {
@@ -139,7 +151,7 @@ h2 {
     margin-bottom: -110px;
 }
 
-.slicer img{
+.slicer img {
     width: 100%;
 }
 
@@ -614,12 +626,13 @@ footer a {
     height: 100%;
 }
 
-.swiper-button-next::after, .swiper-button-prev::after{
+.swiper-button-next::after,
+.swiper-button-prev::after {
     color: #FFF;
     font-size: 70px !important;
 }
 
-.line{
+.line {
     height: 4px;
     width: 0%;
     background-color: white;
