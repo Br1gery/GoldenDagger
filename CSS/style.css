@@ -613,3 +613,9 @@ footer a {
     color: #FFF;
     font-size: 70px !important;
 }
+
+.line{
+    height: 4px;
+    width: 0%;
+    background-color: white;
+}

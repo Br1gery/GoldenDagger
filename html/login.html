@@ -12,6 +12,7 @@
     <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
     <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
     <script src="../scripts/ScrollAnim.js" defer></script>
+    <script src="../scripts/NavHover.js" defer></script>
 </head>
 
 <body>
@@ -19,12 +20,27 @@
         <div class="container nav__cont">
             <a href="index.html"><img src="../resources/test_dagger_final.png" alt=""></a>
             <div class="nav__main">
-                <a href="index.html">Главная</a>
-                <a href="shop.html">Магазин</a>
-                <a href="!">Поддержка</a>
-                <a href="!">О нас</a>
+                <div class="nav__button" style='width: 25%;text-align: center;'>
+                    <a href="index.html" class="nav__main-page">Главная</a>
+                    <div class="line__main line"></div>
+                </div>
+                <div class="nav__button">
+                    <a href="shop.html" class="nav__shop">Магазин</a>
+                    <div class="line__shop line"></div>
+                </div>
+                <div class="nav__button">
+                    <a href="!" class="nav__supp">Поддержка</a>
+                    <div class="line__supp line"></div>
+                </div>
+                <div class="nav__button">
+                    <a href="!" class="nav__about">О нас</a>
+                    <div class="line__about line"></div>
+                </div>
             </div>
-            <a href="login.html">Вход</a>
+            <div>
+                <a href="login.html" class="nav__login">Вход</a>
+                <div class="line__login line" style="width: 100%;"></div>
+            </div>
         </div>
     </div>
 
