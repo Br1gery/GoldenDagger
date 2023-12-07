@@ -440,6 +440,29 @@ footer a {
     background-size: cover;
 }
 
+.headerS{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+    background-image: url("../resources/dungeon_3.jpg");
+    background-size: cover;
+    font-family: "TLheader";
+    font-size: 41px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #FFF;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerS__block {
+    width: 100%;
+    padding-bottom: 10px;
+}
+
 .headerL {
     min-height: 100vh;
     display: flex;
@@ -633,7 +656,7 @@ footer a {
     color: #FFF;
     text-align: center;
     font-family: "TLheader";
-    font-size: 42px;
+    font-size: 3.2vw;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
