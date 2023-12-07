@@ -17,6 +17,10 @@
         padding-bottom: 20px;
     }
 
+    .news__down::-webkit-scrollbar {
+        width: 0;
+    }
+
     .news__item{
         min-width: 420px;
     }
@@ -69,6 +73,10 @@
         flex-wrap: nowrap;
         overflow: scroll;
         padding-bottom: 20px;
+    }
+
+    .media__items::-webkit-scrollbar {
+        width: 0;
     }
 }
 
