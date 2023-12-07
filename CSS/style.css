@@ -162,6 +162,8 @@ h2 {
     flex-direction: column;
     justify-content: center;
     padding-bottom: 50px;
+    background-size: cover;
+    background-position: center;
 }
 
 .news__up-bigger {
@@ -203,6 +205,8 @@ h2 {
     flex-direction: column;
     justify-content: center;
     padding-bottom: 50px;
+    background-size: cover;
+    background-position: center;
 }
 
 .media__items {
@@ -593,6 +597,8 @@ footer a {
 .main_cont {
     background-image: url(../resources/dungeon_2.jpg);
     min-height: 100vh;
+    background-size: cover;
+    background-position: center;
 }
 
 .shop_cont h1 {
@@ -636,4 +642,8 @@ footer a {
     height: 4px;
     width: 0%;
     background-color: white;
+}
+
+.nav__phone-btn{
+    display: none;
 }

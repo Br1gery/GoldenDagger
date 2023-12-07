@@ -1,0 +1,9 @@
+@media screen and (max-width: 992px){
+    .nav__main,.log__btn{
+        display: none;
+    }
+
+    .nav__phone-btn{
+        display: flex;
+    }
+}
