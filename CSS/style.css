@@ -3,6 +3,11 @@
     src: url("../fonts/TLheader-Regular.otf");
 }
 
+:root {
+    --index: calc(1vw + 1vh);
+    --transition: transform .75s cubic-bezier(0.075, 0.500, 0.000, 1.000);
+}
+
 body {
     margin: 0;
 }
@@ -13,7 +18,7 @@ body {
 
 .navigation {
     background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.80) 22.4%, rgba(0, 0, 0, 0.76) 48.96%, rgba(0, 0, 0, 0.64) 73.96%, rgba(0, 0, 0, 0.50) 99.98%);
-    z-index: 10;
+    z-index: 100;
     position: fixed;
     width: 100%;
 }
@@ -32,6 +37,7 @@ body {
 }
 
 .nav__cont a {
+    text-decoration: none;
     color: #FFF;
     text-align: center;
     font-family: 'TLheader';
@@ -40,9 +46,20 @@ body {
     font-weight: 700;
     line-height: normal;
     text-decoration: 0;
+    text-decoration: none;
 }
 
-.nav__main{
+.navigation a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.nav__main {
     width: 45%;
     display: flex;
     flex-direction: row;
@@ -50,7 +67,7 @@ body {
 }
 
 .layers {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -66,6 +83,7 @@ body {
     background-size: cover;
     background-position: center;
     will-change: transform;
+    transition: var(--transition);
 }
 
 .layer__base {
@@ -87,22 +105,26 @@ body {
 
 .layer__header {
     transform: translate3d(0, calc(var(--scrollTop)/1.5), 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     z-index: 1;
     margin-bottom: 50px;
+    transition: var(--transition);
 }
 
 .layer__header p {
     color: #FFF;
     text-align: center;
     font-family: 'TLheader';
-    font-size: 29px;
     font-style: normal;
-    font-weight: 700;
+    font-size: 29px;
     line-height: normal;
     width: 880px;
 }
 
 .layer__header img {
+    width: 100%;
     padding-bottom: 50px;
 }
 
@@ -115,6 +137,7 @@ h2 {
     font-weight: 700;
     line-height: normal;
     margin-bottom: 50px !important;
+    margin-top: 50px !important;
 }
 
 .slicer {
@@ -132,12 +155,17 @@ h2 {
     margin-bottom: -110px;
 }
 
+.slicer img {
+    width: 100%;
+}
+
 .news {
     background-image: url('../resources/dungeon_4.jpg');
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-bottom: 50px;
 }
 
 .news__up-bigger {
@@ -174,10 +202,11 @@ h2 {
 .media {
     background-image: url('../resources/dungeon_5.jpg');
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-bottom: 50px;
 }
 
 .media__items {
@@ -291,7 +320,8 @@ footer a {
 .header__login label {
     padding-left: 10px
 }
-.headerL__button{
+
+.headerL__button {
     width: 410px;
     height: 75px;
     flex-shrink: 0;
@@ -308,6 +338,306 @@ footer a {
     cursor: pointer;
 }
 
-.headerL__button:active{
+.headerL__button:active {
     background: #b2b0b0;
+}
+
+.footer__socials {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header__glaw h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: "TLheader";
+    font-size: 62px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.header__login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 43px;
+}
+
+.header__input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 43px;
+}
+
+.header__loginP {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__passP {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__login input {
+    width: 624px;
+    height: 75px;
+    border-radius: 10px;
+    border: 2px solid #000;
+    background: #323232;
+
+    font-family: "TLheader";
+    font-size: 41px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #FFF;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.header__login label {
+    padding-left: 10px
+}
+
+.headerL__button {
+    width: 410px;
+    height: 75px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 2px solid #000;
+    background: #323232;
+
+    font-family: "TLheader";
+    font-size: 41px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.headerL__button:active {
+    background: #b2b0b0;
+}
+
+.header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+    background-image: url("../resources/new_back.jpg");
+    background-size: cover;
+}
+
+.headerL {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+    background-image: url("../resources/задний\ фон.png");
+    background-size: cover;
+    font-family: "TLheader";
+    font-size: 41px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #FFF;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerL__block {
+    background-color: rgba(0, 0, 0, 0.40);
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.header__fonPanel {
+    background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.80) 22.4%, rgba(0, 0, 0, 0.76) 48.96%, rgba(0, 0, 0, 0.64) 73.96%, rgba(0, 0, 0, 0.50) 99.98%);
+}
+
+.header__block {
+    padding-left: 88px;
+    padding-right: 88px;
+    font-family: "TLheader";
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-size: 24px;
+}
+
+.header__block a {
+    text-decoration: none;
+    color: white;
+}
+
+.header__text {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__img {
+    max-width: 216px;
+    height: 71px;
+}
+
+.header__imgs {
+    width: 100%;
+    height: 100%;
+}
+
+.header__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__textContainer {
+    color: #FFF;
+    text-align: center;
+    font-family: "TLheader";
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal
+}
+
+.header__glaw h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: "TLheader";
+    font-size: 62px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.header__login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 43px;
+}
+
+.header__input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 43px;
+}
+
+.header__loginP {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__passP {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__login input {
+    width: 624px;
+    height: 75px;
+    border-radius: 10px;
+    border: 2px solid #000;
+    background: #323232;
+
+    font-family: "TLheader";
+    font-size: 41px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #FFF;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.header__login label {
+    padding-left: 10px
+}
+
+.headerL__button {
+    width: 410px;
+    height: 75px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 2px solid #000;
+    background: #323232;
+
+    font-family: "TLheader";
+    font-size: 41px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.headerL__button:active {
+    background: #b2b0b0;
+}
+
+.main_cont {
+    background-image: url(../resources/dungeon_2.jpg);
+    min-height: 100vh;
+}
+
+.shop_cont h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: 'TLheader';
+    font-size: 62px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 152px !important;
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 400px !important;
+    height: 500px !important;
+}
+
+.swiper-slide img {
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    color: #FFF;
+    font-size: 70px !important;
+}
+
+.line {
+    height: 4px;
+    width: 0%;
+    background-color: white;
 }
