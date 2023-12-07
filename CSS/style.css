@@ -176,19 +176,38 @@ h2 {
 }
 
 .news__up-bigger {
-    background: #003629;
     width: 100%;
     height: 360px;
     display: flex;
     flex-direction: column-reverse;
     margin-bottom: 40px;
+    background-size: cover;
+    background-image: url(../resources/dan2.png);
+}
+.news__up-bigger img{
+    width: 50vw;
+    height: 360px;
 }
 
 .news__item__down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: rgba(0, 0, 0, 0.6);
     background-blend-mode: darken;
     width: 100%;
     height: 50%
+}
+
+.news__item__down p{
+    color: #FFF;
+    text-align: center;
+    font-family: 'TLheader';
+    font-size: 1.7vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
 }
 
 .news__down {
@@ -198,7 +217,27 @@ h2 {
 }
 
 .news__item {
-    background: #D9D9D9;
+    background-size: cover;
+    background-image: url(../resources/dan.png);
+    width: 30%;
+    height: 290px;
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+.news__item1 {
+    background-size: cover;
+    background-position: center;
+    background-image: url(../resources/fan0413.png);
+    width: 30%;
+    height: 290px;
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+.news__item2 {
+    background-size: cover;
+    background-image: url(../resources/dan1.png);
     width: 30%;
     height: 290px;
     display: flex;
