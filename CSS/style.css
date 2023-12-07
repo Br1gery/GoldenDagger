@@ -29,6 +29,7 @@ body {
     justify-content: space-between;
     z-index: 5;
     align-items: center;
+    width: 100% !important;
 }
 
 .nav__cont img {
@@ -118,14 +119,18 @@ footer a:hover {
     text-align: center;
     font-family: 'TLheader';
     font-style: normal;
-    font-size: 29px;
+    font-size: 1.6vw;
     line-height: normal;
-    width: 880px;
+    width: 48vw;
 }
 
 .layer__header img {
     width: 100%;
     padding-bottom: 50px;
+}
+
+.layer__header-image{
+    width: 57vw;
 }
 
 h2 {
