@@ -12,7 +12,7 @@ body {
     margin: 0;
 }
 
-.nav__a:hover{
+.nav__a:hover {
     color: #b2b0b0;
 }
 
@@ -49,12 +49,12 @@ body {
     text-decoration: none;
 }
 
-.navigation a:hover{
+.navigation a:hover {
     color: white;
     text-decoration: none;
 }
 
-footer a:hover{
+footer a:hover {
     color: white;
     text-decoration: none;
 }
@@ -605,6 +605,41 @@ footer a {
     background-position: center;
 }
 
+.main_contAbout {
+    background-image: url(../resources/dungeon.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.contentB__container{
+    padding-top: 24px;
+}
+
+.contentBlock__container {
+    padding-top: 96px;
+    padding-bottom: 77px;
+    background: rgba(0, 0, 0, 0.22);
+}
+
+.content__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content__container p{
+    max-width: 1056px;
+    color: #FFF;
+    text-align: center;
+    font-family: "TLheader";
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
 .shop_cont h1 {
     color: #FFF;
     text-align: center;
@@ -648,6 +683,6 @@ footer a {
     background-color: white;
 }
 
-.nav__phone-btn{
+.nav__phone-btn {
     display: none;
 }
