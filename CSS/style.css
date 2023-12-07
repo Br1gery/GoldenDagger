@@ -544,6 +544,7 @@ footer a {
 }
 
 .header__glaw h1 {
+    padding-top: 52px !important;
     color: #FFF;
     text-align: center;
     font-family: "TLheader";
@@ -554,6 +555,7 @@ footer a {
 }
 
 .header__login {
+    width: 60vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -562,6 +564,7 @@ footer a {
 }
 
 .header__input {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -570,17 +573,19 @@ footer a {
 }
 
 .header__loginP {
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
 
 .header__passP {
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
 
 .header__login input {
-    width: 624px;
+    width: 100% !important;
     height: 75px;
     border-radius: 10px;
     border: 2px solid #000;
@@ -615,6 +620,7 @@ footer a {
     line-height: normal;
     color: #FFF;
     cursor: pointer;
+    z-index: 10;
 }
 
 .headerL__button:active {
