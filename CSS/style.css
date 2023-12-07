@@ -445,6 +445,29 @@ footer a {
     background-size: cover;
 }
 
+.headerS{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+    background-image: url("../resources/dungeon_3.jpg");
+    background-size: cover;
+    font-family: "TLheader";
+    font-size: 41px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #FFF;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerS__block {
+    width: 100%;
+    padding-bottom: 10px;
+}
+
 .headerL {
     min-height: 100vh;
     display: flex;
@@ -526,6 +549,7 @@ footer a {
 }
 
 .header__glaw h1 {
+    padding-top: 52px !important;
     color: #FFF;
     text-align: center;
     font-family: "TLheader";
@@ -536,6 +560,7 @@ footer a {
 }
 
 .header__login {
+    width: 60vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -544,6 +569,7 @@ footer a {
 }
 
 .header__input {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -552,17 +578,19 @@ footer a {
 }
 
 .header__loginP {
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
 
 .header__passP {
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
 
 .header__login input {
-    width: 624px;
+    width: 100% !important;
     height: 75px;
     border-radius: 10px;
     border: 2px solid #000;
@@ -597,6 +625,7 @@ footer a {
     line-height: normal;
     color: #FFF;
     cursor: pointer;
+    z-index: 10;
 }
 
 .headerL__button:active {
@@ -638,7 +667,7 @@ footer a {
     color: #FFF;
     text-align: center;
     font-family: "TLheader";
-    font-size: 42px;
+    font-size: 3.2vw;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
