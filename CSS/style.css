@@ -266,7 +266,86 @@ h2 {
 }
 
 .media__item {
-    background: #D9D9D9;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../resources/dan4.png);
+    height: 200px;
+    width: 24%;
+}
+.media__item1 {
+    background-size: cover;
+    background-position: center;
+    background-image: url(../resources/dan5.png);
+    height: 200px;
+    width: 24%;
+}
+.media__item2 {
+    background-size: cover;
+    background-position: center;
+    background-image: url(../resources/dan6.png);
+    height: 200px;
+    width: 24%;
+}
+.media__item3 {
+    background-size: cover;
+    background-position: center;
+    background-image: url(../resources/dan7.png);
+    height: 200px;
+    width: 24%;
+}
+.media__item4 {
+    background-size: cover;
+    background-position: center;
+    background-image: url(../resources/dan8.png);
+    height: 200px;
+    width: 24%;
+}
+.media__item5 {
+    background-size: cover;
+    background-position: center;
+    background-image: url(../resources/dan9.png);
+    height: 200px;
+    width: 24%;
+}
+.media__item6 {
+    background-size: cover;
+    background-position: center;
+    background-image: url(../resources/dan10.png);
+    height: 200px;
+    width: 24%;
+}
+.media__item7 {
+    background-size: cover;
+    background-position: center;
+    background-image: url(../resources/dan11.png);
+    height: 200px;
+    width: 24%;
+}
+.media__item8 {
+    background-size: cover;
+    background-position: center;
+    background-image: url(../resources/dan12.png);
+    height: 200px;
+    width: 24%;
+}
+.media__item9 {
+    background-size: cover;
+    background-position: center;
+    background-image: url(../resources/dan13.png);
+    height: 200px;
+    width: 24%;
+}
+.media__item10 {
+    background-size: cover;
+    background-position: center;
+    background-image: url(../resources/dan14.png);
+    height: 200px;
+    width: 24%;
+}
+.media__item11 {
+    background-size: cover;
+    background-position: center;
+    background-image: url(../resources/dan15.png);
     height: 200px;
     width: 24%;
 }
