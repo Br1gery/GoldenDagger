@@ -12,6 +12,7 @@
 	<script src="libs/gsap/ScrollSmoother.min.js" defer></script>
     <script src="scripts/ScrollAnim.js" defer></script>
     <script src="scripts/NavHover.js" defer></script>
+    <script src="scripts/phone_menu.js" defer></script>
     <link rel="stylesheet" href="CSS/medias.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -44,8 +45,41 @@
                 <div class="line__login line" ></div>
             </div>
             <div class="nav__phone-btn">
-                <img src="resources/burger.png" alt="" style="width: 24px; height: 13px;">
+                <img src="resources/burger.png" alt="" style="width: 24px; height: 13px;display: flex;" class="nav__phone1">
+                <img src="resources/burger.png" alt="" style="width: 24px; height: 13px;display: none;" class="nav__phone2">
             </div>
+        </div>
+        <div class="nav__phone-menu" style="background-color: black;">
+            <a href="index.html"><div class="nav__phone nav__phone-btn1">
+                <p>
+                    Главная
+                </p>
+                <div style="background-color: white;width: 100%; height: 1px;"></div>
+            </div></a>
+            <a href="shop.html"><div class="nav__phone nav__phone-btn2">
+                <p>
+                    Магазин
+                </p>
+                <div style="background-color: white;width: 100%; height: 1px;"></div>
+            </div></a>
+            <a href="support.html"><div class="nav__phone nav__phone-btn3">
+                <p>
+                    Поддержка
+                </p>
+                <div style="background-color: white;width: 100%; height: 1px;"></div>
+            </div></a>
+            <a href="aboutUs.html"><div class="nav__phone nav__phone-btn4">
+                <p>
+                    О нас
+                </p>
+                <div style="background-color: white;width: 100%; height: 1px;"></div>
+            </div></a>
+            <a href="login.html"><div class="nav__phone nav__phone-btn5">
+                <p>
+                    Вход
+                </p>
+                <div style="background-color: white;width: 100%; height: 1px;"></div>
+            </div></a>
         </div>
     </div>
 
@@ -82,17 +116,17 @@
                         </div>
                     </div>
                     <div class="news__down">
-                        <div class="news__item">
+                        <div class="news__item-all news__item">
                             <div class="news__item__down">
                                 <p>Ослаблен класс охотник</p>
                             </div>
                         </div>
-                        <div class="news__item1">
+                        <div class="news__item-all news__item1">
                             <div class="news__item__down">
                                 <p>Добавлен новый босс</p>
                             </div>
                         </div>
-                        <div class="news__item2">
+                        <div class="news__item-all news__item2">
                             <div class="news__item__down">
                                 <p>Поддержка новых игроков</p>
                             </div>
@@ -110,18 +144,18 @@
                 <div class="container">
                     <h2>Оффициальные медиа</h2>
                     <div class="media__items">
-                        <div class="media__item"></div>
-                        <div class="media__item1"></div>
-                        <div class="media__item2"></div>
-                        <div class="media__item3"></div>
-                        <div class="media__item4"></div>
-                        <div class="media__item5"></div>
-                        <div class="media__item6"></div>
-                        <div class="media__item7"></div>
-                        <div class="media__item8"></div>
-                        <div class="media__item9"></div>
-                        <div class="media__item10"></div>
-                        <div class="media__item11"></div>
+                        <div class="media__item-all media__item"></div>
+                        <div class="media__item-all media__item1"></div>
+                        <div class="media__item-all media__item2"></div>
+                        <div class="media__item-all media__item3"></div>
+                        <div class="media__item-all media__item4"></div>
+                        <div class="media__item-all media__item5"></div>
+                        <div class="media__item-all media__item6"></div>
+                        <div class="media__item-all media__item7"></div>
+                        <div class="media__item-all media__item8"></div>
+                        <div class="media__item-all media__item9"></div>
+                        <div class="media__item-all media__item10"></div>
+                        <div class="media__item-all media__item11"></div>
                     </div>
                 </div>
             </div>

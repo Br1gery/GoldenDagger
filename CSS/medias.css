@@ -21,11 +21,11 @@
         width: 0;
     }
 
-    .news__item{
+    .news__item-all{
         min-width: 420px;
     }
 
-    .media__item{
+    .media__item-all{
         min-width: 225px;
     }
 
@@ -77,6 +77,14 @@
 
     .media__items::-webkit-scrollbar {
         width: 0;
+    }
+
+    .content__container p{
+        font-size: 20px !important;
+    }
+
+    .news__item__down p{
+        font-size: 20px;
     }
 }
 
