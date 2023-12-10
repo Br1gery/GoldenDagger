@@ -190,14 +190,29 @@ h2 {
     height: 360px;
 }
 
+.news__item3{
+    overflow: hidden;
+}
+
+.div_zagl{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+}
+
 .news__item__down {
     display: flex;
+    position: relative;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background: rgba(0, 0, 0, 0.6);
     background-blend-mode: darken;
+    top: 145px;
     width: 100%;
-    height: 50%
+    height: 290px;
 }
 
 .news__item__down p{
@@ -211,16 +226,35 @@ h2 {
     text-decoration: none;
 }
 
+.news__item-down__info{
+    font-size: 1.2vw !important;
+}
+
 .news__down {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
+.news__down a{
+    width: 30%;
+    text-decoration: none;
+}
+
+.news__down a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.news__up__a:hover, .news__up__a {
+    color: white;
+    text-decoration: none;
+}
+
 .news__item {
     background-size: cover;
     background-image: url(../resources/dan.png);
-    width: 30%;
+    width: 100%;
     height: 290px;
     display: flex;
     flex-direction: column-reverse;
@@ -230,7 +264,7 @@ h2 {
     background-size: cover;
     background-position: center;
     background-image: url(../resources/fan0413.png);
-    width: 30%;
+    width: 100%;
     height: 290px;
     display: flex;
     flex-direction: column-reverse;
@@ -239,7 +273,7 @@ h2 {
 .news__item2 {
     background-size: cover;
     background-image: url(../resources/dan1.png);
-    width: 30%;
+    width: 100%;
     height: 290px;
     display: flex;
     flex-direction: column-reverse;
