@@ -900,3 +900,45 @@ footer a {
     font-family: 'TLheader';
     font-style: normal;
 }
+
+.slide-text{
+    background-color: #000;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    color: #FFF;
+    font-family: 'TLheader';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: 0;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 25px;
+}
+
+.text-text{
+    color: #FFF;
+    font-family: 'TLheader';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: 0;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 25px;
+    position: absolute;
+    top: 150px;
+    opacity: 0;
+}
