@@ -101,16 +101,3 @@ right_btn.addEventListener('click',()=>{
         mid_text_anim.reverse()
     }
 })
-
-// dis_btn.addEventListener('click',()=>{
-//     if(slide == 2){
-//         right_text_anim.reverse()
-//         right_anim.reverse()
-//         slide--
-//     }
-//     if(slide == 0){
-//         left_text_anim.reverse()
-//         left_anim.reverse()
-//         slide++
-//     }
-// })
