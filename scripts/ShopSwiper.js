@@ -1,6 +1,8 @@
 new Swiper('.mySwiper', {
     effect: "coverflow",
     grabCursor: true,
+    noSwiping: true,
+    allowTouchMove: false,
     centeredSlides: true,
     slidesPerView: 'auto',
     initialSlide: 1,
