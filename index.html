@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Darkest Dark</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" href="resources/main_icon.png" type="image/x-icon">
     <script src="scripts/parallax.js"></script>
     <script src="libs/gsap/gsap.min.js" defer></script>
     <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
@@ -16,12 +17,21 @@
     <script src="scripts/newsItemHover.js" defer></script>
     <script src="scripts/wow.min.js"></script>
     <script>
-        new WOW({ mobile:false }).init()
+        new WOW({ mobile: false }).init()
     </script>
     <link rel="stylesheet" href="CSS/medias.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <meta property="og:title" content="Darest Dark" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="resources/test_dagger_final_black.png" />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="112" />
+    <meta property="og:description" content="Незабываемое, непрощающее ошибки хардкорное приключение от первого лица в жанре PvPvE.
+        Объединяйтесь вместе с друзьями, используйте все свои силы, удачу и навыки, чтобы добыть мифические сокровища!" />
+    <meta property="og:site_name" content="Darkest Dark"/>
 </head>
 
 <body>
@@ -130,51 +140,66 @@
             <div class="news">
                 <div class="container">
                     <h2>Последние новости</h2>
-                    <a href="!" class="news__up__a"><div class="news__up-bigger news__item3 wow animate__animated animate__fadeInUp" data-wow-duration="1.5s">
-                        <div class="news__item__down down1">
-                            <div class="div_zagl">
-                                <p>Добавлено новое подземелье</p>
-                            </div>
-                            <div class="div_zagl">
-                                <p class="news__item-down__info">Вышло новое курпное обновление, которое добавило на
-                                    карту новое подземелье, а именно загадочный замок буревестника в горах Хиннери!</p>
+                    <a href="!" class="news__up__a">
+                        <div class="news__up-bigger news__item3 wow animate__animated animate__fadeInUp"
+                            data-wow-duration="1.5s">
+                            <div class="news__item__down down1">
+                                <div class="div_zagl">
+                                    <p>Добавлено новое подземелье</p>
+                                </div>
+                                <div class="div_zagl">
+                                    <p class="news__item-down__info">Вышло новое курпное обновление, которое добавило на
+                                        карту новое подземелье, а именно загадочный замок буревестника в горах Хиннери!
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div></a>
+                    </a>
                     <div class="news__down">
-                        <a href="!"><div class="news__item-all news__item news__item3 wow animate__animated animate__fadeInUp" data-wow-duration="1.5s" >
-                            <div class="news__item__down down2">
-                                <div class="div_zagl">
-                                    <p>Ослаблен класс охотник</p>
-                                </div>
-                                <div class="div_zagl">
-                                    <p class="news__item-down__info">В связи с многочислеными жалобами класс охотника
-                                        был ослаблен</p>
-                                </div>
-                            </div>
-                        </div></a>
-                        <a href="!"><div class="news__item-all news__item1 news__item3 wow animate__animated animate__fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.3s">
-                            <div class="news__item__down down3">
-                                <div class="div_zagl">
-                                    <p>Добавлен новый босс</p>
-                                </div>
-                                <div class="div_zagl">
-                                    <p class="news__item-down__info">В локации подземный лес был добавлен новый босс
-                                        "Безликий"</p>
+                        <a href="!">
+                            <div class="news__item-all news__item news__item3 wow animate__animated animate__fadeInUp"
+                                data-wow-duration="1.5s">
+                                <div class="news__item__down down2">
+                                    <div class="div_zagl">
+                                        <p>Ослаблен класс охотник</p>
+                                    </div>
+                                    <div class="div_zagl">
+                                        <p class="news__item-down__info">В связи с многочислеными жалобами класс
+                                            охотника
+                                            был ослаблен</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div></a>
-                        <a href="!"><div class="news__item-all news__item2 news__item3 wow animate__animated animate__fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.6s">
-                            <div class="news__item__down down4">
-                                <div class="div_zagl">
-                                    <p>Поддержка новых игроков</p>
-                                </div>
-                                <div class="div_zagl">
-                                    <p class="news__item-down__info">Новые игроки при старте игры получают необходимое
-                                        снаряжение для старта!</p>
+                        </a>
+                        <a href="!">
+                            <div class="news__item-all news__item1 news__item3 wow animate__animated animate__fadeInUp"
+                                data-wow-duration="1.5s" data-wow-delay="0.3s">
+                                <div class="news__item__down down3">
+                                    <div class="div_zagl">
+                                        <p>Добавлен новый босс</p>
+                                    </div>
+                                    <div class="div_zagl">
+                                        <p class="news__item-down__info">В локации подземный лес был добавлен новый босс
+                                            "Безликий"</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div></a>
+                        </a>
+                        <a href="!">
+                            <div class="news__item-all news__item2 news__item3 wow animate__animated animate__fadeInUp"
+                                data-wow-duration="1.5s" data-wow-delay="0.6s">
+                                <div class="news__item__down down4">
+                                    <div class="div_zagl">
+                                        <p>Поддержка новых игроков</p>
+                                    </div>
+                                    <div class="div_zagl">
+                                        <p class="news__item-down__info">Новые игроки при старте игры получают
+                                            необходимое
+                                            снаряжение для старта!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -188,18 +213,30 @@
                 <div class="container">
                     <h2>Оффициальные медиа</h2>
                     <div class="media__items">
-                        <div class="media__item-all media__item wow animate__animated animate__fadeInUp" data-wow-duration="1.5s"></div>
-                        <div class="media__item-all media__item1 wow animate__animated animate__fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.2s"></div>
-                        <div class="media__item-all media__item2 wow animate__animated animate__fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.4s"></div>
-                        <div class="media__item-all media__item3 wow animate__animated animate__fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.6s"></div>
-                        <div class="media__item-all media__item4 wow animate__animated animate__fadeInUp" data-wow-duration="1.5s"></div>
-                        <div class="media__item-all media__item5 wow animate__animated animate__fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.2s"></div>
-                        <div class="media__item-all media__item6 wow animate__animated animate__fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.4s"></div>
-                        <div class="media__item-all media__item7 wow animate__animated animate__fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.6s"></div>
-                        <div class="media__item-all media__item8 wow animate__animated animate__fadeInUp" data-wow-duration="1.5s"></div>
-                        <div class="media__item-all media__item9 wow animate__animated animate__fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.2s"></div>
-                        <div class="media__item-all media__item10 wow animate__animated animate__fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.4s"></div>
-                        <div class="media__item-all media__item11 wow animate__animated animate__fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.6s"></div>
+                        <div class="media__item-all media__item wow animate__animated animate__fadeInUp"
+                            data-wow-duration="1.5s"></div>
+                        <div class="media__item-all media__item1 wow animate__animated animate__fadeInUp"
+                            data-wow-duration="1.5s" data-wow-delay="0.2s"></div>
+                        <div class="media__item-all media__item2 wow animate__animated animate__fadeInUp"
+                            data-wow-duration="1.5s" data-wow-delay="0.4s"></div>
+                        <div class="media__item-all media__item3 wow animate__animated animate__fadeInUp"
+                            data-wow-duration="1.5s" data-wow-delay="0.6s"></div>
+                        <div class="media__item-all media__item4 wow animate__animated animate__fadeInUp"
+                            data-wow-duration="1.5s"></div>
+                        <div class="media__item-all media__item5 wow animate__animated animate__fadeInUp"
+                            data-wow-duration="1.5s" data-wow-delay="0.2s"></div>
+                        <div class="media__item-all media__item6 wow animate__animated animate__fadeInUp"
+                            data-wow-duration="1.5s" data-wow-delay="0.4s"></div>
+                        <div class="media__item-all media__item7 wow animate__animated animate__fadeInUp"
+                            data-wow-duration="1.5s" data-wow-delay="0.6s"></div>
+                        <div class="media__item-all media__item8 wow animate__animated animate__fadeInUp"
+                            data-wow-duration="1.5s"></div>
+                        <div class="media__item-all media__item9 wow animate__animated animate__fadeInUp"
+                            data-wow-duration="1.5s" data-wow-delay="0.2s"></div>
+                        <div class="media__item-all media__item10 wow animate__animated animate__fadeInUp"
+                            data-wow-duration="1.5s" data-wow-delay="0.4s"></div>
+                        <div class="media__item-all media__item11 wow animate__animated animate__fadeInUp"
+                            data-wow-duration="1.5s" data-wow-delay="0.6s"></div>
                     </div>
                 </div>
             </div>
@@ -223,6 +260,7 @@
                         <a href=""><img src="resources/vk_png 1.png" alt=""></a>
                         <a href=""><img src="resources/yotube_png 1.png" alt=""></a>
                     </div>
+                    <a href="" style="font-size: 12px;">Icons by icon8</a>
                 </div>
             </footer>
 

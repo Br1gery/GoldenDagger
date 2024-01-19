@@ -77,6 +77,8 @@ left_btn.addEventListener('click',()=>{
         mid_anim.play()
         right_anim.reverse()
         right_text_anim.reverse()
+        left_anim.reverse()
+        left_text_anim.reverse()
     }
     if(slide == 0){
         left_text_anim.play()
