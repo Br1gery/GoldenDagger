@@ -1,0 +1,944 @@
+@font-face {
+    font-family: "TLheader";
+    src: url("../fonts/TLheader-Regular.otf");
+}
+
+:root {
+    --index: calc(1vw + 1vh);
+    --transition: transform .75s cubic-bezier(0.075, 0.500, 0.000, 1.000);
+}
+
+body {
+    margin: 0;
+}
+
+.nav__a:hover {
+    color: #b2b0b0;
+}
+
+.navigation {
+    background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.80) 22.4%, rgba(0, 0, 0, 0.76) 48.96%, rgba(0, 0, 0, 0.64) 73.96%, rgba(0, 0, 0, 0.50) 99.98%);
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+}
+
+.nav__cont {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 5;
+    align-items: center;
+    width: 100% !important;
+}
+
+.nav__cont img {
+    width: 215px;
+    height: 70px;
+}
+
+.nav__cont a {
+    text-decoration: none;
+    color: #FFF;
+    text-align: center;
+    font-family: 'TLheader';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: 0;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.nav__main {
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.layers {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.layer {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    will-change: transform;
+    transition: var(--transition);
+}
+
+.layer__base {
+    background-image: url('../resources/base.jpg');
+    transform: translate3d(0, calc(var(--scrollTop)/1.7), 0);
+}
+
+.layer__mid {
+    background-image: url('../resources/middle.png');
+    transform: translate3d(0, calc(var(--scrollTop)/3), 0);
+    z-index: 2;
+}
+
+.layer__front {
+    background-image: url('../resources/front.png');
+    transform: translate3d(0, calc(var(--scrollTop)/6), 0);
+    z-index: 3;
+}
+
+.layer__header {
+    transform: translate3d(0, calc(var(--scrollTop)/1.5), 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    margin-bottom: 50px;
+    transition: var(--transition);
+}
+
+.layer__header p {
+    color: #FFF;
+    text-align: center;
+    font-family: 'TLheader';
+    font-style: normal;
+    font-size: 1.6vw;
+    line-height: normal;
+    width: 48vw;
+}
+
+.layer__header img {
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.layer__header-image{
+    width: 57vw;
+}
+
+h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: 'TLheader';
+    font-size: 62px !important;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 50px !important;
+    margin-top: 50px !important;
+}
+
+.slicer {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 50%, rgba(0, 0, 0, 0.00) 100%);
+    width: 100%;
+    height: 220px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: -110px;
+    z-index: 3;
+    margin-bottom: -110px;
+}
+
+.slicer img {
+    width: 100%;
+}
+
+.news {
+    background-image: url('../resources/dungeon_4.jpg');
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 50px;
+    background-size: cover;
+    background-position: center;
+}
+
+.news__up-bigger {
+    width: 100%;
+    height: 360px;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 40px;
+    background-size: cover;
+    background-image: url(../resources/dan2.png);
+}
+.news__up-bigger img{
+    width: 50vw;
+    height: 360px;
+}
+
+.news__item3{
+    overflow: hidden;
+}
+
+.div_zagl{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+}
+
+.news__item__down {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+    background-blend-mode: darken;
+    top: 145px;
+    width: 100%;
+    height: 290px;
+}
+
+.news__item__down p{
+    color: #FFF;
+    text-align: center;
+    font-family: 'TLheader';
+    font-size: 1.7vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.news__item-down__info{
+    font-size: 1.2vw !important;
+}
+
+.news__down {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.news__down a{
+    width: 30%;
+    text-decoration: none;
+}
+
+.news__down a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.news__up__a:hover, .news__up__a {
+    color: white;
+    text-decoration: none;
+}
+
+.news__item {
+    background-size: cover;
+    background-image: url(../resources/dan.png);
+    width: 100%;
+    height: 290px;
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+.news__item1 {
+    background-size: cover;
+    background-position: center;
+    background-image: url(../resources/fan0413.png);
+    width: 100%;
+    height: 290px;
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+.news__item2 {
+    background-size: cover;
+    background-image: url(../resources/dan1.png);
+    width: 100%;
+    height: 290px;
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+
+.media {
+    background-image: url('../resources/dungeon_5.jpg');
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 50px;
+    background-size: cover;
+    background-position: center;
+}
+
+.media__items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 20px;
+}
+
+.media__item {
+    background-size: cover;
+    background-position: center;
+    background-image: url(../resources/dan4.png);
+    height: 200px;
+    width: 24%;
+}
+.media__item1 {
+    background-size: cover;
+    background-position: center;
+    background-image: url(../resources/dan5.png);
+    height: 200px;
+    width: 24%;
+}
+.media__item2 {
+    background-size: cover;
+    background-position: center;
+    background-image: url(../resources/dan6.png);
+    height: 200px;
+    width: 24%;
+}
+.media__item3 {
+    background-size: cover;
+    background-position: center;
+    background-image: url(../resources/dan7.png);
+    height: 200px;
+    width: 24%;
+}
+.media__item4 {
+    background-size: cover;
+    background-position: center;
+    background-image: url(../resources/dan8.png);
+    height: 200px;
+    width: 24%;
+}
+.media__item5 {
+    background-size: cover;
+    background-position: center;
+    background-image: url(../resources/dan9.png);
+    height: 200px;
+    width: 24%;
+}
+.media__item6 {
+    background-size: cover;
+    background-position: center;
+    background-image: url(../resources/dan10.png);
+    height: 200px;
+    width: 24%;
+}
+.media__item7 {
+    background-size: cover;
+    background-position: center;
+    background-image: url(../resources/dan11.png);
+    height: 200px;
+    width: 24%;
+}
+.media__item8 {
+    background-size: cover;
+    background-position: center;
+    background-image: url(../resources/dan12.png);
+    height: 200px;
+    width: 24%;
+}
+.media__item9 {
+    background-size: cover;
+    background-position: center;
+    background-image: url(../resources/dan13.png);
+    height: 200px;
+    width: 24%;
+}
+.media__item10 {
+    background-size: cover;
+    background-position: center;
+    background-image: url(../resources/dan14.png);
+    height: 200px;
+    width: 24%;
+}
+.media__item11 {
+    background-size: cover;
+    background-position: center;
+    background-image: url(../resources/dan15.png);
+    height: 200px;
+    width: 24%;
+}
+
+footer {
+    height: 350px;
+    width: 100%;
+    flex-shrink: 0;
+    background: #151515;
+}
+
+.footer__logo {
+    width: 452px;
+    height: 137px;
+    margin-bottom: -30px;
+}
+
+footer a {
+    color: #FFF;
+    text-align: center;
+    font-family: 'TLheader';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.footer__mid {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header__glaw h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: "TLheader";
+    font-size: 62px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.header__login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 43px;
+}
+
+.header__input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 43px;
+}
+
+.header__loginP {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__passP {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__login input {
+    width: 624px;
+    height: 75px;
+    border-radius: 10px;
+    border: 2px solid #000;
+    background: #323232;
+
+    font-family: "TLheader";
+    font-size: 41px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #FFF;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.header__login label {
+    padding-left: 10px
+}
+
+.headerL__button {
+    width: 410px;
+    height: 75px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 2px solid #000;
+    background: #323232;
+
+    font-family: "TLheader";
+    font-size: 41px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.headerL__button:active {
+    background: #b2b0b0;
+}
+
+.footer__socials {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header__glaw h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: "TLheader";
+    font-size: 62px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.header__login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 43px;
+}
+
+.header__input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 43px;
+}
+
+.header__loginP {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__passP {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__login input {
+    width: 624px;
+    height: 75px;
+    border-radius: 10px;
+    border: 2px solid #000;
+    background: #323232;
+
+    font-family: "TLheader";
+    font-size: 41px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #FFF;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.header__login label {
+    padding-left: 10px
+}
+
+.headerL__button {
+    width: 410px;
+    height: 75px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 2px solid #000;
+    background: #323232;
+
+    font-family: "TLheader";
+    font-size: 41px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.headerL__button:active {
+    background: #b2b0b0;
+}
+
+.header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+    background-image: url("../resources/new_back.jpg");
+    background-size: cover;
+}
+
+.headerS{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+    background-image: url("../resources/dungeon_3.jpg");
+    background-size: cover;
+    font-family: "TLheader";
+    font-size: 41px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #FFF;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerS__block {
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.headerL {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+    background-image: url("../resources/задний\ фон.png");
+    background-size: cover;
+    font-family: "TLheader";
+    font-size: 41px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #FFF;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerL__block {
+    background-color: rgba(0, 0, 0, 0.40);
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.header__fonPanel {
+    background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.80) 22.4%, rgba(0, 0, 0, 0.76) 48.96%, rgba(0, 0, 0, 0.64) 73.96%, rgba(0, 0, 0, 0.50) 99.98%);
+}
+
+.header__block {
+    padding-left: 88px;
+    padding-right: 88px;
+    font-family: "TLheader";
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-size: 24px;
+}
+
+.header__block a {
+    text-decoration: none;
+    color: white;
+}
+
+.header__text {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__img {
+    max-width: 216px;
+    height: 71px;
+}
+
+.header__imgs {
+    width: 100%;
+    height: 100%;
+}
+
+.header__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__textContainer {
+    color: #FFF;
+    text-align: center;
+    font-family: "TLheader";
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal
+}
+
+.header__glaw h1 {
+    padding-top: 52px !important;
+    color: #FFF;
+    text-align: center;
+    font-family: "TLheader";
+    font-size: 62px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.header__login {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 43px;
+}
+
+.header__input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 43px;
+}
+
+.header__loginP {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__passP {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__login input {
+    width: 100% !important;
+    height: 75px;
+    border-radius: 10px;
+    border: 2px solid #000;
+    background: #323232;
+
+    font-family: "TLheader";
+    font-size: 41px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #FFF;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.header__login label {
+    padding-left: 10px
+}
+
+.headerL__button {
+    width: 410px;
+    height: 75px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 2px solid #000;
+    background: #323232;
+
+    font-family: "TLheader";
+    font-size: 41px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #FFF;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.headerL__button:active {
+    background: #b2b0b0;
+}
+
+.main_cont {
+    background-image: url(../resources/dungeon_2.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.main_contAbout {
+    background-image: url(../resources/dungeon.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.contentB__container{
+    padding-top: 24px;
+}
+
+.contentBlock__container {
+    padding-top: 96px;
+    padding-bottom: 77px;
+    background: rgba(0, 0, 0, 0.22);
+}
+
+.content__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content__container p{
+    max-width: 1056px;
+    color: #FFF;
+    text-align: center;
+    font-family: "TLheader";
+    font-size: 3.2vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+.shop_cont h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: 'TLheader';
+    font-size: 62px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 152px !important;
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 400px !important;
+    height: 500px !important;
+}
+
+.swiper-slide img {
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    color: #FFF;
+    font-size: 70px !important;
+}
+
+.line {
+    height: 4px;
+    width: 0%;
+    background-color: white;
+}
+
+.nav__phone-btn {
+    display: none;
+}
+
+.nav__phone-menu{
+    position: absolute;
+    z-index: -10;
+    opacity: 0;
+    width: 100%;
+}
+
+.nav__phone{
+    background-color: #000;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__phone p{
+    margin: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: 'TLheader';
+    font-style: normal;
+}
+
+.slide-text{
+    background-color: #000;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    color: #FFF;
+    font-family: 'TLheader';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: 0;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 25px;
+}
+
+.text-text{
+    color: #FFF;
+    font-family: 'TLheader';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: 0;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 25px;
+    position: absolute;
+    top: 150px;
+    opacity: 0;
+}

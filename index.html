@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Darkest Dark</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="scripts/parallax.js"></script>
+    <script src="libs/gsap/gsap.min.js" defer></script>
+    <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+    <script src="scripts/ScrollAnim.js" defer></script>
+    <script src="scripts/NavHover.js" defer></script>
+    <script src="scripts/phone_menu.js" defer></script>
+    <script src="scripts/newsItemHover.js" defer></script>
+    <script src="scripts/wow.min.js"></script>
+    <script>
+        new WOW({ mobile:false }).init()
+    </script>
+    <link rel="stylesheet" href="CSS/medias.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <div class="navigation">
+        <div class="container nav__cont">
+            <a href="index.html"><img src="resources/test_dagger_final.png" alt=""></a>
+            <div class="nav__main">
+                <div class="nav__button" style='width: 25%;text-align: center;'>
+                    <a href="index.html" class="nav__main-page">Главная</a>
+                    <div class="line__main line" style="width: 100%;"></div>
+                </div>
+                <div class="nav__button">
+                    <a href="shop.html" class="nav__shop">Магазин</a>
+                    <div class="line__shop line"></div>
+                </div>
+                <div class="nav__button">
+                    <a href="support.php" class="nav__supp">Поддержка</a>
+                    <div class="line__supp line"></div>
+                </div>
+                <div class="nav__button">
+                    <a href="aboutUs.html" class="nav__about">О нас</a>
+                    <div class="line__about line"></div>
+                </div>
+            </div>
+            <div class="log__btn">
+                <a href="login.html" class="nav__login">Вход</a>
+                <div class="line__login line"></div>
+            </div>
+            <div class="nav__phone-btn">
+                <img src="resources/burger.png" alt="" style="width: 24px; height: 13px;display: flex;"
+                    class="nav__phone1">
+                <img src="resources/burger.png" alt="" style="width: 24px; height: 13px;display: none;"
+                    class="nav__phone2">
+            </div>
+        </div>
+        <div class="nav__phone-menu" style="background-color: black;">
+            <a href="index.html">
+                <div class="nav__phone nav__phone-btn1">
+                    <p>
+                        Главная
+                    </p>
+                    <div style="background-color: white;width: 100%; height: 1px;"></div>
+                </div>
+            </a>
+            <a href="shop.html">
+                <div class="nav__phone nav__phone-btn2">
+                    <p>
+                        Магазин
+                    </p>
+                    <div style="background-color: white;width: 100%; height: 1px;"></div>
+                </div>
+            </a>
+            <a href="support.html">
+                <div class="nav__phone nav__phone-btn3">
+                    <p>
+                        Поддержка
+                    </p>
+                    <div style="background-color: white;width: 100%; height: 1px;"></div>
+                </div>
+            </a>
+            <a href="aboutUs.html">
+                <div class="nav__phone nav__phone-btn4">
+                    <p>
+                        О нас
+                    </p>
+                    <div style="background-color: white;width: 100%; height: 1px;"></div>
+                </div>
+            </a>
+            <a href="login.html">
+                <div class="nav__phone nav__phone-btn5">
+                    <p>
+                        Вход
+                    </p>
+                    <div style="background-color: white;width: 100%; height: 1px;"></div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="container1">
+            <header>
+                <div class="layers">
+                    <div class="layer__header">
+                        <div class="layer__header-image">
+                            <img src="resources/game_logo 1.png" alt="" style="width: 100%;">
+                        </div>
+                        <p>
+                            Незабываемое, непрощающее ошибки хардкорное приключение от первого лица в жанре PvPvE.
+                            Объединяйтесь
+                            вместе с друзьями, используйте все свои силы, удачу и навыки, чтобы добыть мифические
+                            сокровища!
+                        <p>
+                    </div>
+                    <div class="layer layer__base"></div>
+                    <div class="layer layer__mid"></div>
+                    <div class="layer layer__front"></div>
+                </div>
+            </header>
+            <div class="slicer">
+                <div class="container">
+                    <img src="resources/slicer.png" alt="">
+                </div>
+            </div>
+
+            <div class="news">
+                <div class="container">
+                    <h2>Последние новости</h2>
+                    <a href="!" class="news__up__a"><div class="news__up-bigger news__item3 wow animate__animated animate__fadeInUp" data-wow-duration="1.5s">
+                        <div class="news__item__down down1">
+                            <div class="div_zagl">
+                                <p>Добавлено новое подземелье</p>
+                            </div>
+                            <div class="div_zagl">
+                                <p class="news__item-down__info">Вышло новое курпное обновление, которое добавило на
+                                    карту новое подземелье, а именно загадочный замок буревестника в горах Хиннери!</p>
+                            </div>
+                        </div>
+                    </div></a>
+                    <div class="news__down">
+                        <a href="!"><div class="news__item-all news__item news__item3 wow animate__animated animate__fadeInUp" data-wow-duration="1.5s" >
+                            <div class="news__item__down down2">
+                                <div class="div_zagl">
+                                    <p>Ослаблен класс охотник</p>
+                                </div>
+                                <div class="div_zagl">
+                                    <p class="news__item-down__info">В связи с многочислеными жалобами класс охотника
+                                        был ослаблен</p>
+                                </div>
+                            </div>
+                        </div></a>
+                        <a href="!"><div class="news__item-all news__item1 news__item3 wow animate__animated animate__fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.3s">
+                            <div class="news__item__down down3">
+                                <div class="div_zagl">
+                                    <p>Добавлен новый босс</p>
+                                </div>
+                                <div class="div_zagl">
+                                    <p class="news__item-down__info">В локации подземный лес был добавлен новый босс
+                                        "Безликий"</p>
+                                </div>
+                            </div>
+                        </div></a>
+                        <a href="!"><div class="news__item-all news__item2 news__item3 wow animate__animated animate__fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.6s">
+                            <div class="news__item__down down4">
+                                <div class="div_zagl">
+                                    <p>Поддержка новых игроков</p>
+                                </div>
+                                <div class="div_zagl">
+                                    <p class="news__item-down__info">Новые игроки при старте игры получают необходимое
+                                        снаряжение для старта!</p>
+                                </div>
+                            </div>
+                        </div></a>
+                    </div>
+                </div>
+            </div>
+            <div class="slicer">
+                <div class="container">
+                    <img src="resources/slicer.png" alt="">
+                </div>
+            </div>
+
+            <div class="media">
+                <div class="container">
+                    <h2>Оффициальные медиа</h2>
+                    <div class="media__items">
+                        <div class="media__item-all media__item wow animate__animated animate__fadeInUp" data-wow-duration="1.5s"></div>
+                        <div class="media__item-all media__item1 wow animate__animated animate__fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.2s"></div>
+                        <div class="media__item-all media__item2 wow animate__animated animate__fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.4s"></div>
+                        <div class="media__item-all media__item3 wow animate__animated animate__fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.6s"></div>
+                        <div class="media__item-all media__item4 wow animate__animated animate__fadeInUp" data-wow-duration="1.5s"></div>
+                        <div class="media__item-all media__item5 wow animate__animated animate__fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.2s"></div>
+                        <div class="media__item-all media__item6 wow animate__animated animate__fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.4s"></div>
+                        <div class="media__item-all media__item7 wow animate__animated animate__fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.6s"></div>
+                        <div class="media__item-all media__item8 wow animate__animated animate__fadeInUp" data-wow-duration="1.5s"></div>
+                        <div class="media__item-all media__item9 wow animate__animated animate__fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.2s"></div>
+                        <div class="media__item-all media__item10 wow animate__animated animate__fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.4s"></div>
+                        <div class="media__item-all media__item11 wow animate__animated animate__fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.6s"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="slicer">
+                <div class="container">
+                    <img src="resources/slicer.png" alt="">
+                </div>
+            </div>
+
+            <footer>
+                <div class="container cont">
+                    <a href="index.html"><img src="resources/test_dagger_final.png" alt="" class="footer__logo"></a>
+                    <div class="footer__mid">
+                        <a href="index.html">Главная</a>
+                        <a href="shop.html">Магазин</a>
+                        <a href="support.html">Поддержка</a>
+                        <a href="aboutUs.html">О нас</a>
+                    </div>
+                    <div class="footer__socials">
+                        <a href=""><img src="resources/dis_png 1.png" alt=""></a>
+                        <a href=""><img src="resources/vk_png 1.png" alt=""></a>
+                        <a href=""><img src="resources/yotube_png 1.png" alt=""></a>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+</body>
+
+</html>
